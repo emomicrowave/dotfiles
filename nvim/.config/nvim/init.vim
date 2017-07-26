@@ -26,7 +26,11 @@ set termguicolors
 "nvim plugins
 call plug#begin('~/.config/nvim/plugged')
 Plug 'tpope/vim-fugitive'
+Plug 'mhartington/oceanic-next'
 call plug#end()
+
+"colorscheme
+colorscheme OceanicNext
 
 "--------------------------
 "------- FUNCTIONS --------
