@@ -1,3 +1,9 @@
+"nvim plugins
+call plug#begin('~/.config/nvim/plugged')
+Plug 'tpope/vim-fugitive'
+Plug 'mhartington/oceanic-next'
+call plug#end()
+
 syntax enable
 
 set ignorecase
@@ -23,14 +29,17 @@ set hidden " allow closing buffers without saving
 "nvim stuff
 set termguicolors
 
-"nvim plugins
-call plug#begin('~/.config/nvim/plugged')
-Plug 'tpope/vim-fugitive'
-Plug 'mhartington/oceanic-next'
-call plug#end()
 
 "colorscheme
 colorscheme OceanicNext
+
+"terminal stuff
+tnoremap <ESC> <C-\><C-n>
+tnoremap <M-h> <C-\><C-n><C-w>h
+tnoremap <M-j> <C-\><C-n><C-w>j
+tnoremap <M-k> <C-\><C-n><C-w>k
+tnoremap <M-l> <C-\><C-n><C-w>l
+tnoremap <M-q> <C-\><C-n><C-w>q
 
 "--------------------------
 "------- FUNCTIONS --------
