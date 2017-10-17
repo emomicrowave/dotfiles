@@ -3,12 +3,17 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'lervag/vimtex'
 Plug 'mhartington/oceanic-next'
 Plug 'scrooloose/nerdtree'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 call plug#end()
+
+" Deoplete
+let g:deoplete#enable_at_startup = 1
+let g:deoplete#complete_method = "complete"
+let g:deoplete#disable_auto_complete = 1
+let g:deoplete#enable_smart_case = 1
 
 syntax enable
 
