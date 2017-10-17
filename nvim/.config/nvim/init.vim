@@ -1,7 +1,13 @@
 "nvim plugins
 call plug#begin('~/.config/nvim/plugged')
-Plug 'tpope/vim-fugitive'
+Plug 'lervag/vimtex'
 Plug 'mhartington/oceanic-next'
+Plug 'scrooloose/nerdtree'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 syntax enable
