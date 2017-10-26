@@ -1,0 +1,2 @@
+#!/usr/bin/bash
+mupen64plus --input /usr/lib/mupen64plus/mupen64plus-input-sdl.so ~/Developement/multitensorkart/roms/marioKart.n64
