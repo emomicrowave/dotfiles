@@ -2,4 +2,5 @@
 sudo mv /etc/pacman.d/gnupg /etc/pacman.d/gnupg.old
 sudo pacman-key --init
 sudo pacman-key --populate archlinux antergos
+sudo pacman-key --refresh-keys
 
