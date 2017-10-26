@@ -2,6 +2,7 @@
 call plug#begin('~/.config/nvim/plugged')
 Plug 'lervag/vimtex'
 Plug 'mhartington/oceanic-next'
+Plug 'rust-lang/rust.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
