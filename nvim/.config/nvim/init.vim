@@ -33,6 +33,16 @@ set autoindent
 "use <j+k> to exit insert mode
 inoremap jk <esc>
 
+"learn to use vim like a pro
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
+inoremap <Up> <Nop>
+inoremap <Down> <Nop>
+inoremap <Left> <Nop>
+inoremap <Right> <Nop>
+
 "coolstuff
 set wildmenu
 set path=$PWD/**
@@ -40,7 +50,6 @@ set hidden " allow closing buffers without saving
 
 "nvim stuff
 set termguicolors
-
 
 "colorscheme
 colorscheme OceanicNext
