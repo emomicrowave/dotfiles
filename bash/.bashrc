@@ -16,6 +16,9 @@ alias testcompile='g++ -o test -Wall -Wextra'
 export PATH=/home/$USER/anaconda3/bin:$PATH
 export PATH=$PATH:~/.bin/
 
+# add prefered terminal as variable, so that CTRL+ALT+T opens it
+export TERMINAL=/usr/bin/termite
+
 PS1='[\u@\h \W]\$ '
 # >>> BEGIN ADDED BY CNCHI INSTALLER
 BROWSER=/usr/bin/chromium

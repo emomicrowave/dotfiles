@@ -1,0 +1,13 @@
+#!/usr/bin/bash
+nitrogen --restore &
+volumeicon &
+compton --config ~/.config/compton.conf -b &
+tint2 &
+plank &
+conky -c ~/.conky/Conky_Revisited/start_conky_General &
+lxpolkit &
+
+# Wal set colorschemes
+wal -f ~/.Xresources/chalk.dark.wal
+
+setxkbmap -layout us,bg,de -variant ,bas_phonetic, -option grp:win_space_toggle
