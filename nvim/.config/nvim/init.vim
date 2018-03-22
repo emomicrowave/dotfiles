@@ -1,5 +1,10 @@
-"nvim plugins
+"Plugins
 call plug#begin('~/.config/nvim/plugged')
+Plug 'sebastianmarkow/deoplete-rust'
+Plug 'shougo/neoinclude.vim'
+Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'zchee/deoplete-jedi'
+
 Plug 'cespare/vim-toml'
 Plug 'lervag/vimtex'
 Plug 'mhartington/oceanic-next'
@@ -11,15 +16,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
-" Deoplete
-let g:deoplete#enable_at_startup = 1
-let g:deoplete#complete_method = "complete"
-let g:deoplete#disable_auto_complete = 1
-let g:deoplete#enable_smart_case = 1
-
-"NerdTree
-noremap <C-n> :NERDTreeToggle<CR>
-
+"basic stuff
 syntax enable
 
 set ignorecase
@@ -66,6 +63,29 @@ tnoremap <M-j> <C-\><C-n><C-w>j
 tnoremap <M-k> <C-\><C-n><C-w>k
 tnoremap <M-l> <C-\><C-n><C-w>l
 tnoremap <M-q> <C-\><C-n><C-w>q
+
+"--------------------------
+"-----PLUGIN SETTINGS -----
+"--------------------------
+
+"Deoplete
+let g:deoplete#enable_at_startup = 1
+let g:deoplete#complete_method = "complete"
+let g:deoplete#enable_smart_case = 1
+"let g:deoplete#disable_auto_complete = 1
+
+augroup omnifuncs
+	autocmd!
+	autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+augroup end
+
+"tab completion and toggle
+inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
+inoremap <C-d> <ESC>:call deoplete#toggle()<CR>a
+
+"NerdTree
+noremap <C-n> :NERDTreeToggle<CR>
+
 
 "--------------------------
 "------- FUNCTIONS --------

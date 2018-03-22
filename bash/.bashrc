@@ -15,6 +15,7 @@ alias testcompile='g++ -o test -Wall -Wextra'
 # variables export
 export PATH=/home/$USER/anaconda3/bin:$PATH
 export PATH=$PATH:~/.bin/
+export PATH=$PATH:~/.cargo/bin
 
 # add prefered terminal as variable, so that CTRL+ALT+T opens it
 export TERMINAL=/usr/bin/termite
