@@ -1,5 +1,6 @@
 "nvim plugins
 call plug#begin('~/.config/nvim/plugged')
+Plug 'cespare/vim-toml'
 Plug 'lervag/vimtex'
 Plug 'mhartington/oceanic-next'
 Plug 'rust-lang/rust.vim'
@@ -16,6 +17,9 @@ let g:deoplete#complete_method = "complete"
 let g:deoplete#disable_auto_complete = 1
 let g:deoplete#enable_smart_case = 1
 
+"NerdTree
+noremap <C-n> :NERDTreeToggle<CR>
+
 syntax enable
 
 set ignorecase
@@ -30,8 +34,9 @@ set softtabstop=4
 "keep indent when pressing Ctrl+Enter
 set autoindent
 
-"use <j+k> to exit insert mode
+"useful standard mappings
 inoremap jk <esc>
+noremap <C-l> :noh<CR>
 
 "learn to use vim like a pro
 noremap <Up> <Nop>
