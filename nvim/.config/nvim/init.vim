@@ -83,6 +83,13 @@ augroup end
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 inoremap <C-d> <ESC>:call deoplete#toggle()<CR>a
 
+let g:racer_cmd=globpath("$HOME","/.cargo/bin/racer")
+let g:racer_experimental_completer=1
+let g:deoplete#sources#rust#racer_binary=globpath("$HOME","/.cargo/bin/racer")
+let g:deoplete#sources#rust#rust_source_path=expand("$RUST_SRC_PATH")
+let g:deoplete#sources#rust#show_duplicates=1
+let g:deoplete#sources#rust#documentation_max_height=20
+
 "NerdTree
 noremap <C-n> :NERDTreeToggle<CR>
 

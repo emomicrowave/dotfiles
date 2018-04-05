@@ -13,9 +13,10 @@ alias termite='termite -c ~/.config/termite/config'
 alias testcompile='g++ -o test -Wall -Wextra'
 
 # variables export
-export PATH=/home/$USER/anaconda3/bin:$PATH
+export PATH=$HOME/anaconda3/bin:$PATH
 export PATH=$PATH:~/.bin/
 export PATH=$PATH:~/.cargo/bin
+export RUST_SRC_PATH=$HOME/Developement/rust/rust-lang/src
 
 # add prefered terminal as variable, so that CTRL+ALT+T opens it
 export TERMINAL=/usr/bin/termite
