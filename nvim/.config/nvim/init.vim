@@ -6,8 +6,10 @@ Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'zchee/deoplete-jedi'
 
 Plug 'cespare/vim-toml'
+Plug 'joshhartigan/vim-reddit'
 Plug 'lervag/vimtex'
 Plug 'mhartington/oceanic-next'
+Plug 'NLKNguyen/papercolor-theme'
 Plug 'rust-lang/rust.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
@@ -54,7 +56,8 @@ set hidden " allow closing buffers without saving
 set termguicolors
 
 "colorscheme
-colorscheme OceanicNext
+set background=light
+colorscheme PaperColor
 
 "terminal stuff
 tnoremap <ESC> <C-\><C-n>
