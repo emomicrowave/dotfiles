@@ -1,8 +1,10 @@
 "Plugins
 call plug#begin('~/.config/nvim/plugged')
 Plug 'sebastianmarkow/deoplete-rust'
-Plug 'shougo/neoinclude.vim'
 Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'shougo/neoinclude.vim'
+Plug 'shougo/neoinclude.vim'
+Plug 'zchee/deoplete-clang'
 Plug 'zchee/deoplete-jedi'
 
 Plug 'cespare/vim-toml'
@@ -92,6 +94,9 @@ let g:deoplete#sources#rust#racer_binary=globpath("$HOME","/.cargo/bin/racer")
 let g:deoplete#sources#rust#rust_source_path=expand("$RUST_SRC_PATH")
 let g:deoplete#sources#rust#show_duplicates=1
 let g:deoplete#sources#rust#documentation_max_height=20
+
+let g:deoplete#sources#clang#libclang_path=expand("/usr/lib/libclang.so")
+let g:deoplete#sources#clang#clang_header=expand("/usr/lib/clang")
 
 "NerdTree
 noremap <C-n> :NERDTreeToggle<CR>
