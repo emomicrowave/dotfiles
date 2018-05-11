@@ -1,7 +1,3 @@
 # dotfiles
 
-##TODO:
-- merge home and work PC `.bashrc`
-- push openbox config files
-- add `~/.bin` to `$PATH`
-
+Mostly neovim configurations, but other useful stuff too I guess. One day I will have a pretty desktop configuration and it will be here. 
