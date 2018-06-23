@@ -1,7 +1,7 @@
 [options]
 #font = Monospace 10
-font = FiraMono 10
-geometry = 820x900
+font = FiraMono 11
+geometry = 960x900
 transparency = 0.3
 
 [colors]
