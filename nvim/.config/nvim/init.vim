@@ -8,6 +8,7 @@ Plug 'zchee/deoplete-clang'
 Plug 'zchee/deoplete-jedi'
 
 Plug 'cespare/vim-toml'
+Plug 'dhruvasagar/vim-table-mode'
 Plug 'joshhartigan/vim-reddit'
 Plug 'lervag/vimtex'
 Plug 'mhartington/oceanic-next'
@@ -69,6 +70,12 @@ tnoremap <M-j> <C-\><C-n><C-w>j
 tnoremap <M-k> <C-\><C-n><C-w>k
 tnoremap <M-l> <C-\><C-n><C-w>l
 tnoremap <M-q> <C-\><C-n><C-w>q
+
+"Umlaut
+inoremap <C-f>o ö
+inoremap <C-f>u ü
+inoremap <C-f>a ä
+inoremap <C-f>s ß
 
 "--------------------------
 "-----PLUGIN SETTINGS -----
