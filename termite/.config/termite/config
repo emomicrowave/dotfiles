@@ -1,8 +1,6 @@
 [options]
-#font = Inconsolata 12
-#font = Hack 10
-#font = Overpass Mono 10
-font = Monospace 10
+#font = Monospace 10
+font = FiraMono 10
 geometry = 820x900
 transparency = 0.3
 
