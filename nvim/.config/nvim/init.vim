@@ -37,6 +37,10 @@ set softtabstop=4
 "keep indent when pressing Ctrl+Enter
 set autoindent
 
+" substitute
+set inccommand=nosplit
+set gdefault
+
 "useful standard mappings
 inoremap jk <esc>
 noremap <C-l> :noh<CR>
