@@ -9,7 +9,6 @@ Plug 'zchee/deoplete-jedi'
 
 Plug 'cespare/vim-toml'
 Plug 'dhruvasagar/vim-table-mode'
-Plug 'joshhartigan/vim-reddit'
 Plug 'lervag/vimtex'
 Plug 'mhartington/oceanic-next'
 Plug 'NLKNguyen/papercolor-theme'
