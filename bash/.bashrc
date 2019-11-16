@@ -12,8 +12,10 @@ alias la='ls -a'
 alias termite='termite -c ~/.config/termite/config'
 alias testcompile='g++ -o test -Wall -Wextra'
 
+alias vim='nvim'
+
 # variables export
-export PATH=$HOME/anaconda3/bin:$PATH
+export PATH=$PATH:$HOME/anaconda3/bin
 export PATH=$PATH:~/.bin/
 export PATH=$PATH:~/.cargo/bin
 export RUST_SRC_PATH=$HOME/Developement/rust/rust-lang/src

@@ -24,6 +24,7 @@ call plug#end()
 
 "basic stuff
 syntax enable
+set tw=80
 
 set ignorecase
 set smartcase
@@ -44,6 +45,8 @@ set gdefault
 "useful standard mappings
 inoremap jk <esc>
 noremap <C-l> :noh<CR>
+noremap j gj
+noremap k gk
 
 "learn to use vim like a pro
 noremap <Up> <Nop>
@@ -86,6 +89,7 @@ inoremap <C-f>s ß
 "--------------------------
 
 "Deoplete
+set completeopt-=preview
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#complete_method = "complete"
 let g:deoplete#enable_smart_case = 1
